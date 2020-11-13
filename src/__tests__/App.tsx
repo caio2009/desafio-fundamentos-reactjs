@@ -6,15 +6,15 @@ jest.mock('../utils/formatValue.ts', () => ({
   default: jest.fn().mockImplementation((value: number) => {
     switch (value) {
       case 6000:
-        return 'R$ 6.000,00';
+        return '6.000,00';
       case 50:
-        return 'R$ 50,00';
+        return '50,00';
       case 5950:
-        return 'R$ 5.950,00';
+        return '5.950,00';
       case 1500:
-        return 'R$ 1.500,00';
+        return '1.500,00';
       case 4500:
-        return 'R$ 4.500,00';
+        return '4.500,00';
       default:
         return '';
     }
